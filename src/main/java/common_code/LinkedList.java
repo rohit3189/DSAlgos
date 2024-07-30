@@ -48,4 +48,15 @@ public class LinkedList {
 
     }
 
+    public void traverse(LinkedListNode head) {
+        LinkedListNode temp = head;
+        while (temp != null) {
+            System.out.print(temp.data);
+            temp = temp.next;
+            if (temp != null) {
+                System.out.print(" -> ");
+            }
+        }
+    }
+
 }

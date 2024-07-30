@@ -54,6 +54,8 @@ public class HighestAverageMarks {
            .ifPresentOrElse((e) -> resultMap.put(e.getKey(), e.getValue()),
                             () -> System.out.println("Highest average not found!"));
 
+        System.out.println(resultMap);
+
         return resultMap;
     }
 }
